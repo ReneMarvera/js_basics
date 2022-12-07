@@ -15,6 +15,9 @@ const createPersona = (nombre,apellido,ocupacion='empleado',estadoCivil='soltero
     console.log(`Hello, ${nombre} ${apellido}, you're a ${ocupacion} and you're currently ${estadoCivil}`);
 }*/
 
+// OJO: En los parámetros de la siguiente funcion se está dando una desestructuración, es decir, obtiene los parámetros que 
+// saca del objeto entre sus paréntesis, y estos pueden ser usados dentro de la función.
+
 const returnPersona = ({nombre,apellido,estadoCivil,ocupacion,salario=1000}) =>
 ({
     nombrePersona:nombre,
@@ -27,6 +30,10 @@ const returnPersona = ({nombre,apellido,estadoCivil,ocupacion,salario=1000}) =>
 });
 
 let persona = createPersona(`Rene`,`Martinez`,`empleado`,`casado`);
+
+// Acá se "sacan" los valores que devuelve la función, notemos que en la funciíon, el objeto, se encuentra entre sus 
+// únicos paréntesis, por lo que hace un return del objeto, con sus parámetros NOTAR QUE NO SON LOS MISMOS QUE LOS 
+// PARÁMETROS que se ingresan en la función
 let {nombrePersona,apellidoPersona,salarioPersona:salarioP,desc:{renta,isss}} = returnPersona(persona);
 // Primeras dos variables: retorno normal
 // salarioPersona: Se cambia su nombre a salarioP

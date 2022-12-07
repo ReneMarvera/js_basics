@@ -9,5 +9,5 @@ const testFunction = (valor) =>
 
 const [nombre,putNombre] = testFunction('Rene');
 
-console.log(nombre);
-putNombre();
+console.log(nombre);    // SAME
+putNombre();            // SAME
