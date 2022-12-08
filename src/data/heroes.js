@@ -33,7 +33,7 @@ const heroes =
 const owners = ['DC','Marvel'];
 
 export
-{
+{ 
     heroes as default,
     owners
 }

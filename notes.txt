@@ -1,0 +1,22 @@
+Promise
+
+Promesas son, por naturaleza, asíncronas, es decir, se ejecuta hasta que todo el código es ejecutado
+
+resolve: Callback cuando promesa es successful
+reject: Callback cuando promesa da error
+
+Las promesas son un objeto retornado
+A las promesas se le adjuntan Callbacks (funciones)
+Es decir, funciones a un objeto y no a una función
+
+OJO
+Promise, devuelve un objeto
+Then, devuelve una nueva Promise
+al igual que catch.
+Se pueden encadenar muchos then y catch
+
+Async / Await
+
+Anteponer Async en una función, hace que su return, por defecto, sea en una Promise
+Await hace que el código se comporte de manera síncrona dentro de una Promise
+Para el manejo de errores en funciones async, se hace uso de Try Catch, (Estudiar Response)
